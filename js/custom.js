@@ -1,4 +1,4 @@
-alert("Please Do Not Refresh The Page");
+//alert("Please Do Not Refresh The Page");
 window.addEventListener('load',function(){
 	setTimeout(function(){
 		document.querySelector('.add-to').style.display ="block";
