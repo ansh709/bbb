@@ -349,5 +349,24 @@
 			font-size:25px;
 			
 		}
-		
+		.mytools>ul>li{
+			padding: 10px;
+			background: rgb(255 255 255);
+			margin: 10px 10px;
+			border-radius: 16px;
+			font-size: 22px;
+		}
+		.mytools>ul>li>a{
+			color: rgb(69 69 71)!important;
+		}
+		#about{
+			height: 100%;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			background: rgb(254 207 43);
+			overflow: scroll;
+			padding: 10px;
+			display: none;
+		}
 }
