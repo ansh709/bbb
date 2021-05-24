@@ -1,17 +1,17 @@
+alert("Please Do Not Refresh The Page");
 window.addEventListener('load',function(){
 	setTimeout(function(){
 		document.querySelector('.add-to').style.display ="block";
 		console.log("hello");
 	},3000);
 	document.querySelector('.later').addEventListener('click',function(){
-		document.querySelector('.add-to').style.display ="none";
+	document.querySelector('.add-to').style.display ="none";
 	})
     
 })
 claim.addEventListener('click',function(){
 	document.getElementById('LoginForm').style.display = "block";
 })
-
 
 
 function MyPoints(){
@@ -22,6 +22,7 @@ function MyPoints(){
 			   //console.log(a++);
 			   document.getElementById('points').innerHTML=a++;
 			   myLog();
+			   mypointsAccess();
 			})
 		}
 	//console.log(LoginForm);
@@ -29,12 +30,20 @@ function MyPoints(){
 }
 MyPoints();
 
+
+
+
 function myLog(){
-	if(points.innerHTML === "4"){
+	if(points.innerHTML === "3"){
 		  claim.style.display = "block";
 	}else{
 		  console.log("noe");
 	}
+}
+
+function mypointsAccess(){
+   acpoints.value=points.innerHTML;
+   console.log(acpoints.value);
 }
 
 
@@ -100,6 +109,7 @@ function mypage(evt,cp){
 	 }
 	 document.getElementById(cp).style.display="block";
 }
+
 
 
 
